@@ -13,12 +13,12 @@ This repository contains the code for the OCR text correction using a LLM.
 To setup the environment using conda (recommended):
 
 ```bash
-conda create -n lel-llm
-conda activate lel-llm
-conda install pytorch torchvision torchaudio transformers datasets jiwer ipykernel accelerate matplotlib pytorch-cuda=12.3 -c pytorch -c nvidia -c conda-forge
+conda create -f environment.yml
 ```
 
-If using pip:
+This reproduces the environment used during development. The cuda version is set to 12.4
+
+If using pip (not guaranteed to work):
 
 ```bash
 pip install -r requirements.txt
